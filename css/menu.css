@@ -232,13 +232,13 @@
     }
 }
 
-main{
+#showcase{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 
     .showcase{
         width: 100%;
-        height: 60%;
+        height: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: center;
