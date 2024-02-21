@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.main-menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #171d25;
+}
+.main-menu .logo {
+  width: 250px;
+  padding: 1.5rem;
+}
+.main-menu .logo a img {
+  height: 45px;
+}
+.main-menu .menu-dropdown {
+  display: flex;
+  gap: 1rem;
+}
+.main-menu .menu-dropdown .dropdown-element {
+  font-size: 1.2rem;
+  font-weight: 500;
+  list-style: none;
+  padding: 1.3rem 0;
+  cursor: pointer;
+}
+.main-menu .menu-dropdown .dropdown-element .active {
+  color: #1a9fff;
+  padding-bottom: 0.1rem;
+  border-bottom: 2px solid #1a9fff;
+}
+.main-menu .menu-dropdown .dropdown-element a {
+  text-decoration: none;
+  color: #c5c3c0;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-element-title {
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-submenu {
+  display: none;
+  position: absolute;
+  background-color: #3d4450;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 0.4rem;
+  z-index: 10;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-submenu .dropdown-subelement {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-submenu .dropdown-subelement:hover {
+  background-color: #dcdedf;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-submenu .dropdown-subelement:hover a {
+  color: #3d4450;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-submenu .dropdown-subelement:hover a span {
+  color: #fff;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-submenu a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem 1rem;
+}
+.main-menu .menu-dropdown .dropdown-element .dropdown-submenu a span {
+  background-color: orange;
+  color: #fff;
+  padding: 2px;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-size: 0.5rem;
+}
+.main-menu .menu-dropdown .dropdown-element:hover .dropdown-element-title {
+  color: #fff;
+}
+.main-menu .menu-dropdown .dropdown-element:hover .active {
+  color: #1a9fff;
+}
+.main-menu .menu-dropdown .dropdown-element:hover .dropdown-submenu {
+  display: flex;
+}
+.main-menu .infos {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: #fff;
+  height: 80px;
+}
+.main-menu .infos .install {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  background-color: #272d37;
+  cursor: pointer;
+}
+.main-menu .infos .install:hover {
+  background-color: #3d4450;
+}
+.main-menu .infos .bell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+  background-color: #272d37;
+  cursor: pointer;
+}
+.main-menu .infos .bell:hover {
+  background-color: #3d4450;
+}
+.main-menu .infos .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-menu .infos .user .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+.main-menu .infos .user .user-info .user-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.main-menu .infos .user .user-info .user-dropdown .name {
+  font-size: 0.8rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding-top: 0.3rem;
+  color: #636568;
+}
+.main-menu .infos .user .user-info .user-dropdown .name:hover {
+  color: #fff;
+}
+.main-menu .infos .user .user-info .user-dropdown .user-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 4%;
+  background-color: #3d4450;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 0.4rem;
+  z-index: 10;
+}
+.main-menu .infos .user .user-info .user-dropdown .user-dropdown-menu .user-dropdown-subelement {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-menu .infos .user .user-info .user-dropdown .user-dropdown-menu .user-dropdown-subelement:hover {
+  background-color: #dcdedf;
+}
+.main-menu .infos .user .user-info .user-dropdown .user-dropdown-menu .user-dropdown-subelement:hover a {
+  color: #3d4450;
+}
+.main-menu .infos .user .user-info .user-dropdown .user-dropdown-menu a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  color: #dcdedf;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+}
+.main-menu .infos .user .user-info .user-dropdown .user-dropdown-menu a span {
+  color: #1a9fff;
+}
+.main-menu .infos .user .user-info .user-wallet {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.main-menu .infos .user .user-info .user-wallet a {
+  color: #fff;
+  text-decoration: none;
+}
+.main-menu .infos .user-icon img {
+  border: 2px solid #565656;
+}
+
+#showcase {
+  width: 100%;
+  height: 50vh;
+}
+#showcase .showcase {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.5rem;
+  background: url(../../img/menu-showcase-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#showcase .showcase .showcase-itens {
+  width: 50%;
+  min-width: 940px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 0.1rem;
+}
+#showcase .showcase .showcase-itens .extra-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#showcase .showcase .showcase-itens .extra-btns a {
+  font-size: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  background: #729da7;
+  padding: 0.1rem 1.3rem;
+  border-radius: 1px;
+}
+#showcase .showcase .showcase-itens .extra-btns a:hover {
+  background: linear-gradient(90deg, #eeeff1 0%, #c6cacf 60%, #9fa7af 100%);
+  color: #000;
+}
+#showcase .showcase .showcase-itens .showcase-menu {
+  width: 100%;
+  height: 2.3rem;
+  min-width: 940px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2c3b7d;
+}
+#showcase .showcase .showcase-itens .showcase-menu .showcase-menu-dropdown {
+  display: flex;
+  height: 100%;
+}
+#showcase .showcase .showcase-itens .showcase-menu .showcase-menu-item {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#showcase .showcase .showcase-itens .showcase-menu .showcase-menu-item a {
+  text-decoration: none;
+  color: #c8c8ca;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+#showcase .showcase .showcase-itens .showcase-menu .showcase-menu-item:hover {
+  background: #3a7ebf;
+  background: linear-gradient(90deg, #3a7ebf 0%, rgba(58, 127, 191, 0.631372549) 60%, rgba(44, 59, 125, 0.6460959384) 100%);
+}
+#showcase .showcase .showcase-itens .showcase-menu .search {
+  padding: 4px 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#showcase .showcase .showcase-itens .showcase-menu .search input {
+  height: 100%;
+  background: #316282;
+  border-radius: 2px;
+  border: transparent;
+  padding-left: 1rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  outline: none;
+}
+#showcase .showcase .showcase-itens .showcase-menu .search input:hover {
+  border: #4c9acc;
+}
+#showcase .showcase .showcase-itens .showcase-menu .search label {
+  position: absolute;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+#showcase .showcase .showcase-itens .showcase-menu .search button {
+  background: #5499c0;
+  height: 100%;
+  width: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+#showcase .showcase .showcase-itens .showcase-menu .search button:hover {
+  background: #64b4e3;
+}/*# sourceMappingURL=menu.css.map */

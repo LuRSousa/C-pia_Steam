@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -62,19 +63,21 @@
                     width: 100%;
                     display: flex;
                     align-items: center;
-                }
 
-                .dropdown-subelement:hover{
-                    background-color: #dcdedf;
-
-                    a{
-                        color: #3d4450;
-
-                        span{
-                            color: #fff;
+                    &:hover{
+                        background-color: #dcdedf;
+    
+                        a{
+                            color: #3d4450;
+    
+                            span{
+                                color: #fff;
+                            }
                         }
                     }
                 }
+
+                
 
                 a{
                     font-size: 0.8rem;
@@ -93,21 +96,23 @@
                     }
                 }
             }
+
+            &:hover{
+                .dropdown-element-title{
+                    color: #fff;
+                }
+    
+                .active{
+                    color: #1a9fff;
+                }
+    
+                .dropdown-submenu{
+                    display: flex;
+                }
+            }
         }
 
-        .dropdown-element:hover{
-            .dropdown-element-title{
-                color: #fff;
-            }
-
-            .active{
-                color: #1a9fff;
-            }
-
-            .dropdown-submenu{
-                display: flex;
-            }
-        }
+        
     }
 
     .infos{
@@ -125,6 +130,10 @@
             font-size: 0.8rem;
             background-color: #272d37;
             cursor: pointer;
+
+            &:hover{
+                background-color: #3d4450;
+            }
         }
 
         .bell{
@@ -134,11 +143,13 @@
             padding: 0.4rem 1rem;
             background-color: #272d37;
             cursor: pointer;
+
+            &:hover{
+                background-color: #3d4450;
+            }
         }
 
-        .bell:hover , .install:hover{
-            background-color: #3d4450;
-        }
+        
 
         .user{
             display: flex;
@@ -166,12 +177,12 @@
                         cursor: pointer;
                         padding-top: 0.3rem;
                         color: #636568;
+
+                        &:hover{
+                            color: #fff;
+                        }
                     }
 
-                    .name:hover{
-                        color: #fff;
-                    }
-    
                     .user-dropdown-menu{
                         display: none;
                         position: absolute;
@@ -186,13 +197,13 @@
                             width: 100%;
                             display: flex;
                             align-items: center;
-                        }
-        
-                        .user-dropdown-subelement:hover{
-                            background-color: #dcdedf;
-        
-                            a{
-                                color: #3d4450;
+
+                            &:hover{
+                                background-color: #dcdedf;
+            
+                                a{
+                                    color: #3d4450;
+                                }
                             }
                         }
         
@@ -243,7 +254,7 @@
         align-items: flex-start;
         justify-content: center;
         padding-top: 0.5rem;
-        background: url(../img/menu-showcase-bg.png);
+        background: url(../../img/menu-showcase-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -270,11 +281,11 @@
                     background: #729da7;
                     padding: 0.1rem 1.3rem;
                     border-radius: 1px;
-                }
-
-                a:hover{
-                    background: linear-gradient(90deg, #eeeff1 0%, #c6cacf 60%, #9fa7af 100%);  
-                    color: #000;
+                    
+                    &:hover{
+                        background: linear-gradient(90deg, #eeeff1 0%, #c6cacf 60%, #9fa7af 100%);  
+                        color: #000;
+                    }
                 }
             }
 
@@ -306,12 +317,14 @@
                         width: 100%;
                         padding: 0rem 1rem;
                     }
+
+                    &:hover{
+                        background: #3a7ebf;
+                        background: linear-gradient(90deg, #3a7ebf 0%, #3a7fbfa1 60%, rgba(44,59,125,0.6460959383753502) 100%);  
+                    }
                 }
 
-                .showcase-menu-item:hover{
-                    background: #3a7ebf;
-                    background: linear-gradient(90deg, #3a7ebf 0%, #3a7fbfa1 60%, rgba(44,59,125,0.6460959383753502) 100%);  
-                }
+                
 
                 .search{
                     padding: 4px 0;
@@ -329,10 +342,10 @@
                         font-weight: 300;
                         font-size: 0.8rem;
                         outline: none;
-                    }
 
-                    input:hover{
-                        border: #4c9acc;
+                        &:hover{
+                            border: #4c9acc;
+                        }
                     }
 
                     label{
@@ -354,11 +367,11 @@
                         border-radius: 2px;
                         margin-right: 0.3rem;
                         cursor: pointer;
-                    }
 
-                    button:hover{
-                        background: #64b4e3;
-                    }
+                        &:hover{
+                            background: #64b4e3;
+                        }
+                    }       
                 }
             }
         }

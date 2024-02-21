@@ -31,17 +31,17 @@
                     font-size: 1rem;
                 }
             }
-        }
 
-        .gift:hover{
-            p{
-                color: #fff;
-                
-                span{
+            &:hover{
+                p{
                     color: #fff;
+                    
+                    span{
+                        color: #fff;
+                    }
                 }
             }
-        }
+        }        
 
         .tags{
             display: flex;
@@ -66,10 +66,10 @@
                     cursor: pointer;
                     text-decoration: none;
                     width: max-content;
-                }
 
-                .tags-element:hover{
-                    color: #47a5db;
+                    &:hover{
+                        color: #47a5db;
+                    }
                 }
             }
         }

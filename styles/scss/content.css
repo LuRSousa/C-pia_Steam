@@ -1,0 +1,62 @@
+#content {
+  width: 100%;
+  height: auto;
+  background: #1b2838;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.4rem 7rem;
+}
+#content .filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+#content .filters .gift {
+  text-decoration: none;
+}
+#content .filters .gift .gift-img img {
+  width: 180px;
+}
+#content .filters .gift p {
+  color: rgba(255, 255, 255, 0.7450980392);
+  font-size: 0.8rem;
+}
+#content .filters .gift p span {
+  color: #47a5db;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+#content .filters .gift:hover p {
+  color: #fff;
+}
+#content .filters .gift:hover p span {
+  color: #fff;
+}
+#content .filters .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+#content .filters .tags .tags-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#content .filters .tags .tags-list .tags-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #224b7c;
+  font-weight: 600;
+}
+#content .filters .tags .tags-list .tags-element {
+  color: rgba(255, 255, 255, 0.6588235294);
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  width: -moz-max-content;
+  width: max-content;
+}
+#content .filters .tags .tags-list .tags-element:hover {
+  color: #47a5db;
+}/*# sourceMappingURL=content.css.map */
