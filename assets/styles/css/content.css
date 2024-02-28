@@ -4,12 +4,14 @@
   background: #1b2838;
   display: flex;
   justify-content: flex-start;
-  padding: 1.4rem 7rem;
+  padding: 3rem 7rem;
+  position: relative;
 }
 #content .filters {
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
+  padding-top: 21px;
 }
 #content .filters .gift {
   text-decoration: none;
@@ -59,4 +61,212 @@
 }
 #content .filters .tags .tags-list .tags-element:hover {
   color: #47a5db;
+}
+#content .games {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#content .games .showcase {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+#content .games .showcase .showcase-itens {
+  width: 50%;
+  min-width: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 0.1rem;
+}
+#content .games .showcase .showcase-itens .extra-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#content .games .showcase .showcase-itens .extra-btns a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  background: #729da7;
+  padding: 0.1rem 1.6rem;
+  border-radius: 1px;
+}
+#content .games .showcase .showcase-itens .extra-btns a:hover {
+  background: linear-gradient(90deg, #eeeff1 0%, #c6cacf 60%, #9fa7af 100%);
+  color: #000;
+}
+#content .games .showcase .showcase-itens .showcase-menu {
+  width: 100%;
+  height: 2.3rem;
+  min-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2c3b7d;
+}
+#content .games .showcase .showcase-itens .showcase-menu .showcase-menu-dropdown {
+  display: flex;
+  height: 100%;
+}
+#content .games .showcase .showcase-itens .showcase-menu .showcase-menu-item {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#content .games .showcase .showcase-itens .showcase-menu .showcase-menu-item a {
+  text-decoration: none;
+  color: #c8c8ca;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0rem 0.5rem;
+}
+#content .games .showcase .showcase-itens .showcase-menu .showcase-menu-item:hover {
+  background: #3a7ebf;
+  background: linear-gradient(90deg, #3a7ebf 0%, rgba(58, 127, 191, 0.631372549) 60%, rgba(44, 59, 125, 0.6460959384) 100%);
+}
+#content .games .showcase .showcase-itens .showcase-menu .search {
+  padding: 4px 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#content .games .showcase .showcase-itens .showcase-menu .search input {
+  height: 100%;
+  background: #316282;
+  border-radius: 2px;
+  border: transparent;
+  padding-left: 1rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  outline: none;
+}
+#content .games .showcase .showcase-itens .showcase-menu .search input:hover {
+  border: #4c9acc;
+}
+#content .games .showcase .showcase-itens .showcase-menu .search input::-moz-placeholder {
+  color: #000;
+}
+#content .games .showcase .showcase-itens .showcase-menu .search input::placeholder {
+  color: #000;
+}
+#content .games .showcase .showcase-itens .showcase-menu .search button {
+  background: #5499c0;
+  height: 100%;
+  width: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+#content .games .showcase .showcase-itens .showcase-menu .search button:hover {
+  background: #64b4e3;
+}
+#content .games .highlights {
+  width: 50%;
+  min-width: 840px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+#content .games .highlights .highlights-text {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+#content .games .highlights .highlights-carousel {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-cover {
+  background: #c6cacf;
+  width: 65%;
+  height: 100%;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-name {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 370;
+  width: 90%;
+  display: flex;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-top: 1rem;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs .gamebox-imgs-line {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs .gamebox-imgs-line img {
+  width: 130px;
+  height: 65px;
+  background: #fff;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-text {
+  padding-top: 0.6rem;
+  width: 90%;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 350;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-text span {
+  color: #6ec006;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-tags {
+  display: flex;
+  width: 90%;
+  padding-top: 0.2rem;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-tags .gamebox-tags-item {
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 200;
+  background: #394148;
+  border-radius: 3px;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding-top: 10%;
+}
+#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-footer .gamebox-price {
+  font-size: 0.5rem;
+  color: #fff;
 }/*# sourceMappingURL=content.css.map */
