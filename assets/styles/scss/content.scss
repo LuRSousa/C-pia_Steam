@@ -202,116 +202,152 @@
             }
         }
 
-        .highlights{
-            width: 50%;
-            min-width: 840px;
+        .highlights-box{
             display: flex;
-            flex-direction: column;
+            width: 110%;
             align-self: center;
+            justify-content: center;
+            padding-top: 4rem;
+            height: 400px;
             
-            .highlights-text{
-                text-transform: uppercase;
+            .highlights-btn{
+                height: 120px;
+                width: 50px;
+                align-self: center;
+                font-size: 5rem;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                background-color: #152432;
+                border: none;
                 color: #fff;
-                font-weight: 500;
+                cursor: pointer;
+
+                &:hover{
+                    background: #3f566a;
+                }
             }
 
-            .highlights-carousel{
+            .highlights{
+                width: 50%;
+                min-width: 840px;
+                height: 320px;
                 display: flex;
-                width: 100%;
+                flex-direction: column;
                 justify-content: center;
-
-                .highlights-btn{
-
+                align-self: center;
+                
+                .highlights-text{
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 500;
+                    padding-bottom: 1rem;
                 }
-
-                .highlights-game-list{
-                    width: 100%;
+    
+                .highlights-carousel{
                     display: flex;
-                    align-items: center;
-
-                    .highlights-gamebox{
-                        display: flex;
+                    width: 100%;
+                    height: 300px;
+                    justify-content: center;
+    
+                    .highlights-game-list{
                         width: 100%;
                         height: 300px;
-
-                        .gamebox-cover{
-                            background: #c6cacf;
-                            width: 65%;
-                            height: 100%;
-                        }
-
-                        .gamebox-content{
-                            width: 35%;
-                            height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+    
+                        .highlights-gamebox{
                             display: flex;
-                            flex-direction: column;
-                            align-items: center;
-
-                            .gamebox-name{
-                                color: #fff;
-                                font-size: 1.6rem;
-                                font-weight: 370;
-                                width: 90%;
-                                display: flex;
+                            width: 100%;
+                            height: 300px;
+                            cursor: pointer;
+    
+                            .gamebox-cover{
+                                background: #c6cacf;
+                                width: 65%;
+                                height: 100%;
                             }
-
-                            .gamebox-imgs{
-                                width: 100%;
+    
+                            .gamebox-content{
+                                width: 35%;
+                                height: 100%;
                                 display: flex;
                                 flex-direction: column;
-                                gap: 0.7rem;
-                                padding-top: 1rem;
-
-                                .gamebox-imgs-line{
+                                align-items: center;
+                                background: #0c161f;
+    
+                                .gamebox-name{
+                                    color: #fff;
+                                    font-size: 1.6rem;
+                                    font-weight: 370;
+                                    width: 90%;
                                     display: flex;
-                                    justify-content: space-between;
-                                    width: 96%;
+                                }
+    
+                                .gamebox-imgs{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0.7rem;
+                                    padding-top: 1rem;
+    
+                                    .gamebox-imgs-line{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: 96%;
+    
+                                        & img{
+                                            width: 130px;
+                                            height: 65px;
+                                            background: #fff;
+                                            opacity: 0.7;
 
-                                    & img{
-                                        width: 130px;
-                                        height: 65px;
-
-                                        background: #fff;
+                                            &:hover{
+                                                opacity: 1;
+                                            }
+                                        }
                                     }
                                 }
-                            }
-
-                            .gamebox-text{
-                                padding-top: 0.6rem;
-                                width: 90%;
-                                color: #fff;
-                                font-size: 1.08rem;
-                                font-weight: 350;
-
-                                & span{
-                                    color: #6ec006;
-                                }
-                            }
-
-                            .gamebox-tags{
-                                display: flex;
-                                width: 90%;
-                                padding-top: 0.2rem;
-
-                                .gamebox-tags-item{
+    
+                                .gamebox-text{
+                                    padding-top: 0.6rem;
+                                    width: 90%;
                                     color: #fff;
-                                    padding: 0.2rem 0.5rem;
-                                    font-size: 0.7rem;
-                                    font-weight: 200;
-                                    background: #394148;
-                                    border-radius: 3px;
+                                    font-size: 1.08rem;
+                                    font-weight: 350;
+    
+                                    & span{
+                                        color: #6ec006;
+                                    }
                                 }
-                            }
-
-                            .gamebox-footer{
-                                display: flex;
-                                width: 90%;
-                                justify-content: space-between;
-                                padding-top: 10%;
-                                
-                                .gamebox-price{
-                                    font-size: 0.5rem;
-                                    color: #fff;
+    
+                                .gamebox-tags{
+                                    display: flex;
+                                    width: 90%;
+                                    padding-top: 0.2rem;
+    
+                                    .gamebox-tags-item{
+                                        color: #fff;
+                                        padding: 0.2rem 0.5rem;
+                                        font-size: 0.7rem;
+                                        font-weight: 200;
+                                        background: #394148;
+                                        border-radius: 3px;
+                                    }
+                                }
+    
+                                .gamebox-footer{
+                                    display: flex;
+                                    width: 90%;
+                                    justify-content: space-between;
+                                    padding-top: 10%;
+                                    
+                                    .gamebox-price{
+                                        font-size: 0.5rem;
+                                        color: #fff;
+                                    }
                                 }
                             }
                         }

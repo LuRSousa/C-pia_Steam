@@ -174,85 +174,122 @@
 #content .games .showcase .showcase-itens .showcase-menu .search button:hover {
   background: #64b4e3;
 }
-#content .games .highlights {
+#content .games .highlights-box {
+  display: flex;
+  width: 110%;
+  align-self: center;
+  justify-content: center;
+  padding-top: 4rem;
+  height: 400px;
+}
+#content .games .highlights-box .highlights-btn {
+  height: 120px;
+  width: 50px;
+  align-self: center;
+  font-size: 5rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: #152432;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+#content .games .highlights-box .highlights-btn:hover {
+  background: #3f566a;
+}
+#content .games .highlights-box .highlights {
   width: 50%;
   min-width: 840px;
+  height: 320px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-self: center;
 }
-#content .games .highlights .highlights-text {
+#content .games .highlights-box .highlights .highlights-text {
   text-transform: uppercase;
   color: #fff;
   font-weight: 500;
+  padding-bottom: 1rem;
 }
-#content .games .highlights .highlights-carousel {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-#content .games .highlights .highlights-carousel .highlights-game-list {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox {
+#content .games .highlights-box .highlights .highlights-carousel {
   display: flex;
   width: 100%;
   height: 300px;
+  justify-content: center;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-cover {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+}
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-cover {
   background: #c6cacf;
   width: 65%;
   height: 100%;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content {
   width: 35%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #0c161f;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-name {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-name {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 370;
   width: 90%;
   display: flex;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
   padding-top: 1rem;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs .gamebox-imgs-line {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs .gamebox-imgs-line {
   display: flex;
   justify-content: space-between;
   width: 96%;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs .gamebox-imgs-line img {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs .gamebox-imgs-line img {
   width: 130px;
   height: 65px;
   background: #fff;
+  opacity: 0.7;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-text {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-imgs .gamebox-imgs-line img:hover {
+  opacity: 1;
+}
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-text {
   padding-top: 0.6rem;
   width: 90%;
   color: #fff;
   font-size: 1.08rem;
   font-weight: 350;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-text span {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-text span {
   color: #6ec006;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-tags {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-tags {
   display: flex;
   width: 90%;
   padding-top: 0.2rem;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-tags .gamebox-tags-item {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-tags .gamebox-tags-item {
   color: #fff;
   padding: 0.2rem 0.5rem;
   font-size: 0.7rem;
@@ -260,13 +297,13 @@
   background: #394148;
   border-radius: 3px;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-footer {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-footer {
   display: flex;
   width: 90%;
   justify-content: space-between;
   padding-top: 10%;
 }
-#content .games .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-footer .gamebox-price {
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-footer .gamebox-price {
   font-size: 0.5rem;
   color: #fff;
 }/*# sourceMappingURL=content.css.map */
