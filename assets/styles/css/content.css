@@ -306,4 +306,15 @@
 #content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox .gamebox-content .gamebox-footer .gamebox-price {
   font-size: 0.5rem;
   color: #fff;
+}
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .highlights-gamebox:hover .gamebox-description {
+  display: block;
+}
+#content .games .highlights-box .highlights .highlights-carousel .highlights-game-list .gamebox-description {
+  position: absolute;
+  margin-left: 101%;
+  width: 250px;
+  height: 260px;
+  background: #e1e8ee;
+  display: none;
 }/*# sourceMappingURL=content.css.map */
